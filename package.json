@@ -1,0 +1,23 @@
+{
+  "name": "wysihtml5",
+  "version": "0.3.1",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Firnis/wysihtml5.git"
+  },
+  "author": "",
+  "readmeFilename": "README.textile",
+  "gitHead": "56960b31adc37e07797382d8e8b10109f206b19c",
+  "bugs": {
+    "url": "https://github.com/Firnis/wysihtml5/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.2"
+  }
+}

@@ -95,12 +95,20 @@ module.exports = function(grunt) {
 					dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.min.js',
 				}]
 			}
+		},
+		sed: {
+			version: {
+				path: 'dist/<%= pkg.name %>-<%= pkg.version %>.js',
+				pattern: '@VERSION',
+				replacement: '<%= pkg.version %>'
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-sed');
 
-	grunt.registerTask('default', ['concat', 'uglify']);
+	grunt.registerTask('default', ['concat', 'sed', 'uglify']);
 
 };
